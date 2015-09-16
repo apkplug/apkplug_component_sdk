@@ -1,0 +1,13 @@
+{"componentsInfo": [
+  {"plugName":"maketionSdk",
+    "symbolicName":"com.android.maketionsdk",
+    "version" :"1.00",
+    "appid":"123456",
+    "assetsPath":"MaketionSDKActivity.apk",
+    "osgiServerClassName":"com.apkplug.component.maketionsdk.IMaketionCardSDK"},
+  { "plugName":"GeeTestSdk",
+    "symbolicName":"com.gt.plug",
+    "version" :"1.00","appid":"123457",
+    "assetsPath":"GtPlug.apk",
+    "osgiServerClassName":"com.gt.plug.GtSDK"}
+]}

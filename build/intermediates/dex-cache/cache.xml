@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        jar="/Users/qinfeng/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife/7.0.0/f1e24ac977505d1fdcabadaa5be1f41dc11c4286/butterknife-7.0.0.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="f1e24ac977505d1fdcabadaa5be1f41dc11c4286">
+        <dex dex="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/build/intermediates/pre-dexed/debug/butterknife-7.0.0-d5ff35210c9581b822ce38c2bedae0ecb01d8d4f.jar" />
+    </item>
+    <item
+        jar="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/libs/GtSDK.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="9de30b304d074718ba464e9c0bf33964d7dd61ef">
+        <dex dex="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/build/intermediates/pre-dexed/debug/GtSDK-e7aef63dc801340f954a8b3789a806f44d5481d1.jar" />
+    </item>
+    <item
+        jar="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="8694693636ab36910c8100ce527c258ff3ebece0">
+        <dex dex="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/build/intermediates/pre-dexed/debug/classes-a7cd9139cdb4a2421377583744d1de118a55bcf2.jar" />
+    </item>
+    <item
+        jar="/Users/qinfeng/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3.1/ecb6e1f8e4b0e84c4b886c2f14a1500caf309757/gson-2.3.1.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
+        <dex dex="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/build/intermediates/pre-dexed/debug/gson-2.3.1-c5f8464250fd2cece7c426717ba684f9c6806d1b.jar" />
+    </item>
+    <item
+        jar="/Applications/cocos2dx/V3.5/adt-bundle/sdk/extras/android/m2repository/com/android/support/support-annotations/20.0.0/support-annotations-20.0.0.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa">
+        <dex dex="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/build/intermediates/pre-dexed/debug/support-annotations-20.0.0-b3605ba51db2dcff63581e6a026ee1e445466331.jar" />
+    </item>
+    <item
+        jar="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/libs/BundleCloud2.8.5-Release.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="7e670231460314b457f622893b4b79eea2c8e418">
+        <dex dex="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/build/intermediates/pre-dexed/debug/BundleCloud2.8.5-Release-1652da8ebb4c0a3522ab4fb8ae09ae075e9e3147.jar" />
+    </item>
+    <item
+        jar="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/jars/libs/internal_impl-20.0.0.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d">
+        <dex dex="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/build/intermediates/pre-dexed/debug/internal_impl-20.0.0-7c8b3ba1b69e1fb3969b025ac0490a49021fb558.jar" />
+    </item>
+
+</items>
