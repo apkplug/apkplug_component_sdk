@@ -1,1 +1,3 @@
-include ':app'
+include ':app', ':ChatUIDemo'
+include ':uDesklibrary'
+include ':udesk_android_sdk_demo'

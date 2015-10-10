@@ -24,4 +24,5 @@ dependencies {
     compile 'com.jakewharton:butterknife:7.0.0'
     compile files('libs/BundleCloud2.8.5-Release.jar')
     compile files('libs/GtSDK.jar')
+    compile files('libs/LaunchPlug.jar')
 }

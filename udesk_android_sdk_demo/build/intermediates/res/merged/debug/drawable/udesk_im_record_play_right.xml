@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animation-list xmlns:android="http://schemas.android.com/apk/res/android"
+    android:oneshot="false" >
+    
+    <!-- 第一个可以使用默认的背景图片. 您也可以自行添加图片 -->
+    <item android:drawable="@drawable/udesk_im_record_right_default" android:duration="150"></item>
+    <item android:drawable="@drawable/udesk_im_record_right_play1" android:duration="150"></item>
+    <item android:drawable="@drawable/udesk_im_record_right_play2" android:duration="150"></item>
+
+</animation-list>
+<!-- From: file:/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/uDesklibrary/src/main/res/drawable/udesk_im_record_play_right.xml --><!-- From: file:/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/udesk_android_sdk_demo/build/intermediates/exploded-aar/apkplug_component_sdk/uDesklibrary/unspecified/res/drawable/udesk_im_record_play_right.xml -->

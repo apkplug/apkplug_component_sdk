@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<View xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="1dp"
+    android:layout_height="match_parent"
+    android:background="@color/udesk_color_line" />
+<!-- From: file:/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/uDesklibrary/src/main/res/layout/udesk_line_vertical.xml --><!-- From: file:/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/udesk_android_sdk_demo/build/intermediates/exploded-aar/apkplug_component_sdk/uDesklibrary/unspecified/res/layout/udesk_line_vertical.xml -->

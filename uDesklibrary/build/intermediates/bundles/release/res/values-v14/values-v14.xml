@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/uDesklibrary/src/main/res/values-v14/udesk_styles.xml -->
+    <eat-comment/>
+    <style name="Udesk_Theme" parent="android:Theme.Holo.Light.NoActionBar">
+    </style>
+</resources>

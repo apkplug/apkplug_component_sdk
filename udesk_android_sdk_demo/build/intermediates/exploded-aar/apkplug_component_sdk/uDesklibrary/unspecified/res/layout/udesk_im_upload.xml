@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/udesk_bottom_upload"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFEFEFF1"
+    android:gravity="center_vertical"
+    android:minHeight="46dp"
+    android:orientation="horizontal"
+    android:visibility="gone" >
+
+    <include
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginLeft="15dp"
+        layout="@layout/udesk_default_progressbar" />
+
+    <TextView
+        android:id="@+id/udesk_upload_hint"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:singleLine="true"
+        android:textColor="#ff606060"
+     
+        android:textSize="14sp" />
+
+</LinearLayout><!-- From: file:/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/uDesklibrary/src/main/res/layout/udesk_im_upload.xml -->

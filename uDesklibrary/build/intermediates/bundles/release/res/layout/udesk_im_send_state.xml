@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<cn.udesk.saas.sdk.view.UdeskImMessageStateView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/udesk_im_state"
+    android:layout_width="22dp"
+    android:layout_height="22dp"
+    android:layout_centerVertical="true"
+    android:layout_gravity="center_vertical"
+    android:layout_marginLeft="9dp"
+    android:layout_marginRight="9dp" >
+
+    <ImageView
+        android:id="@+id/udesk_im_retry"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/udesk_im_retry" />
+
+    <ProgressBar
+        android:id="@+id/udesk_im_wait"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:indeterminateDrawable="@drawable/udesk_anim_progress" />
+
+</cn.udesk.saas.sdk.view.UdeskImMessageStateView><!-- From: file:/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/uDesklibrary/src/main/res/layout/udesk_im_send_state.xml -->

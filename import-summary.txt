@@ -7,36 +7,33 @@ The following files were *not* copied into the new Gradle project; you
 should evaluate whether these are still needed in your project and if
 so manually move them:
 
+From UDesk.library:
 * .DS_Store
-* .gitignore
-* README.md
-* component0.1.jar
-* ic_launcher-web.png
+From udesk_android_sdk_demo:
+* .DS_Store
 * proguard-project.txt
-
-Replaced Jars with Dependencies:
---------------------------------
-The importer recognized the following .jar files as third party
-libraries and replaced them with Gradle dependencies instead. This has
-the advantage that more explicit version information is known, and the
-libraries can be updated automatically. However, it is possible that
-the .jar file in your project was of an older version than the
-dependency we picked, which could render the project not compileable.
-You can disable the jar replacement in the import wizard and try again:
-
-android-support-v4.jar => com.android.support:support-v4:20.0.0
-gson-2.3.1.jar => com.google.code.gson:gson:2.3.1
 
 Moved Files:
 ------------
 Android Gradle projects use a different directory structure than ADT
 Eclipse projects. Here's how the projects were restructured:
 
-* AndroidManifest.xml => app/src/main/AndroidManifest.xml
-* assets/ => app/src/main/assets/
-* libs/NBundle2.8.4.08.business-Release.jar => app/libs/NBundle2.8.4.08.business-Release.jar
-* res/ => app/src/main/res/
-* src/ => app/src/main/java/
+In UDesk.library:
+* AndroidManifest.xml => uDesklibrary/src/main/AndroidManifest.xml
+* assets/ => uDesklibrary/src/main/assets
+* libs/android-async-http-1.4.6.jar => uDesklibrary/libs/android-async-http-1.4.6.jar
+* libs/apiEngine_v1.1.0.jar => uDesklibrary/libs/apiEngine_v1.1.0.jar
+* libs/asmack-android-8-4.0.6.jar => uDesklibrary/libs/asmack-android-8-4.0.6.jar
+* libs/qiniu-android-sdk-7.0.1.jar => uDesklibrary/libs/qiniu-android-sdk-7.0.1.jar
+* libs/udesk_sdk_2.0.7.jar => uDesklibrary/libs/udesk_sdk_2.0.7.jar
+* res/ => uDesklibrary/src/main/res/
+* src/ => uDesklibrary/src/main/java
+In udesk_android_sdk_demo:
+* AndroidManifest.xml => udesk_android_sdk_demo/src/main/AndroidManifest.xml
+* assets/ => udesk_android_sdk_demo/src/main/assets/
+* lint.xml => udesk_android_sdk_demo/lint.xml
+* res/ => udesk_android_sdk_demo/src/main/res/
+* src/ => udesk_android_sdk_demo/src/main/java/
 
 Next Steps:
 -----------

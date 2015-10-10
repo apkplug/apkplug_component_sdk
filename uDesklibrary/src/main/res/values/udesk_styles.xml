@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <style name="udesk_navi_button_text_style">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/udesk_color_navi_text</item>
+        <item name="android:textSize">@dimen/udesk_navi_text_size</item>
+        <item name="android:ellipsize">middle</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">3dp</item>
+    </style>
+
+    <style name="Udesk_Theme" parent="android:Theme.Translucent.NoTitleBar"></style>
+
+</resources>

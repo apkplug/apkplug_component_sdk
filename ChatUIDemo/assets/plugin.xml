@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin-features
+	Bundle-Name="ChatUIDemo"
+	Bundle-SymbolicName="com.easemob.chatuidemo"
+	Bundle-Version="1.0"
+	date="2015.10.8"
+	provider-name="Apkplug"
+	provider-url=""
+	Bundle-Activator="com.plug.SimpleBundle"
+	>
+</plugin-features>

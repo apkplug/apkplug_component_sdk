@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/ChatUIDemo/assets"><file name="plugin.xml" path="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/ChatUIDemo/assets/plugin.xml"/></source></dataSet><dataSet config="debug"><source path="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/ChatUIDemo/build-types/debug/assets"/></dataSet></merger>

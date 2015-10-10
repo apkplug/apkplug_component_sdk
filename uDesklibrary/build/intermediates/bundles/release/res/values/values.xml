@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- From: file:/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/uDesklibrary/src/main/res/values/udesk_colors.xml -->
+    <eat-comment/>
+    <color name="udesk_anim_color_background_red">#FF4040</color>
+    <color name="udesk_anim_color_background_yellow">#FF9900</color>
+    <color name="udesk_color_im_avatar_border">#FFEEEEEE</color>
+    <color name="udesk_color_im_commondity_link">#1f54db</color>
+    <color name="udesk_color_im_commondity_subtitle">#a5adc1</color>
+    <color name="udesk_color_im_commondity_title">#444444</color>
+    <color name="udesk_color_im_text_left">#444444</color>
+    <color name="udesk_color_im_text_right">#FFFFFF</color>
+    <color name="udesk_color_im_time_text">#c7c6c6</color>
+    <color name="udesk_color_line">#e2e2eb</color>
+    <color name="udesk_color_navi_text">#FFFFFF</color>
+    <color name="udesk_color_navi_text_center">#FFFFFF</color>
+    <color name="udesk_divider">#cecdcd</color>
+    <declare-styleable name="CircleImageView"><attr format="dimension" name="border_width"/><attr format="color" name="border_color"/><attr format="boolean" name="border_overlay"/></declare-styleable>
+    <!-- From: file:/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/uDesklibrary/src/main/res/values/udesk_dimens.xml -->
+    <eat-comment/>
+    <dimen name="udesk_agent_state_bottom">0dp</dimen>
+    <dimen name="udesk_im_avatar_border_width">2dp</dimen>
+    <dimen name="udesk_im_avatar_width_height">45dp</dimen>
+    <dimen name="udesk_im_commondity_width_height">59dp</dimen>
+    <dimen name="udesk_im_divider_height">0dp</dimen>
+    <dimen name="udesk_im_emoji_height">46dp</dimen>
+    <dimen name="udesk_im_emoji_width">38dp</dimen>
+    <dimen name="udesk_im_item_padding_left_right_max">65dp</dimen>
+    <dimen name="udesk_im_item_padding_left_right_min">20dp</dimen>
+    <dimen name="udesk_im_item_padding_top_bottom">5dp</dimen>
+    <dimen name="udesk_im_message_margin_left_right">75dp</dimen>
+    <dimen name="udesk_im_move_to_cancel_offset">50dp</dimen>
+    <dimen name="udesk_im_record_popup_height">148dp</dimen>
+    <dimen name="udesk_im_record_popup_status_height">118dp</dimen>
+    <dimen name="udesk_im_record_popup_txt_height">30dp</dimen>
+    <dimen name="udesk_im_record_popup_width">148dp</dimen>
+    <dimen name="udesk_navi_height">48dp</dimen>
+    <dimen name="udesk_navi_padding">2dp</dimen>
+    <dimen name="udesk_navi_right_margin">10dp</dimen>
+    <dimen name="udesk_navi_text_size">16sp</dimen>
+    <dimen name="udesk_navi_title_padding">5dp</dimen>
+    <dimen name="udesk_navi_title_size">16sp</dimen>
+    <!-- From: file:/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/uDesklibrary/src/main/res/values/udesk_colors.xml -->
+    <eat-comment/>
+    <drawable name="udesk_commondity_default_thumbnail">#a5adc1</drawable>
+    <drawable name="udesk_im_conversation_bg">#F2F2F2</drawable>
+    <drawable name="udesk_im_conversation_list_selector">@android:color/transparent</drawable>
+    <drawable name="udesk_im_divider">@android:color/transparent</drawable>
+    <drawable name="udesk_navi_bg">#3565df</drawable>
+    <!-- From: file:/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/uDesklibrary/src/main/res/values/udesk_strings.xml -->
+    <eat-comment/>
+    <string name="udesk_agent_offline_no_send">当前没有可用客服，不能发送消息</string>
+    <string name="udesk_cancel">取消</string>
+    <string name="udesk_copy">复制</string>
+    <string name="udesk_domain_is_null">UDesk注册的域名不能为空！</string>
+    <string name="udesk_download_image">正在下载图片…</string>
+    <string name="udesk_download_image_fail">图片下载失败！</string>
+    <string name="udesk_error_network">没有可用网络</string>
+    <string name="udesk_error_network_parse">数据解析异常</string>
+    <string name="udesk_error_no_store">你的手机上没有安装App市场类软件</string>
+    <string name="udesk_fail_save_image">图片保存失败</string>
+    <string name="udesk_get_more_history">拉取历史记录</string>
+    <string name="udesk_helper_get_article_failed">获取问题失败.</string>
+    <string name="udesk_helper_get_list_failed">获取问题列表失败.</string>
+    <string name="udesk_helper_loadding">正在获取，请稍候…</string>
+    <string name="udesk_helper_search_empty">没有找到相关的知识点.</string>
+    <string name="udesk_im_record_error">录音出现异常!</string>
+    <string name="udesk_im_time_format">"MM月dd日 EE HH时mm分"</string>
+    <string name="udesk_im_time_format_am">"上午"</string>
+    <string name="udesk_im_time_format_date">"yyyy/MM/dd"</string>
+    <string name="udesk_im_time_format_dby">"前天"</string>
+    <string name="udesk_im_time_format_pm">"下午"</string>
+    <string name="udesk_im_time_format_yday">"昨天"</string>
+    <string name="udesk_label_customer_offline">客服不在线，请留言</string>
+    <string name="udesk_label_customer_online">"客服%1$s在线"</string>
+    <string name="udesk_label_hint_cancel">松开手指 立即取消</string>
+    <string name="udesk_label_hint_recording">向上滑动 取消发送</string>
+    <string name="udesk_label_hint_too_short">说话时间太短</string>
+    <string name="udesk_label_im_long_voice">长按录音</string>
+    <string name="udesk_label_no_sd">SD卡不可用，请检查</string>
+    <string name="udesk_label_search_fail">无法找到你搜索的内容么?</string>
+    <string name="udesk_label_send_commondity_link">"发送链接"</string>
+    <string name="udesk_loading_more">正在拉取记录</string>
+    <string name="udesk_msg_offline_to_form">当前客服不在线，您可以选择提交表单来通知客服</string>
+    <string name="udesk_msg_retry">重发该消息</string>
+    <string name="udesk_navi_back">返回</string>
+    <string name="udesk_navi_close">关闭</string>
+    <string name="udesk_navi_helper_input_hint">描述你的问题</string>
+    <string name="udesk_navi_helper_title_content">问题</string>
+    <string name="udesk_navi_helper_title_main">帮助</string>
+    <string name="udesk_navi_helper_title_search">搜索</string>
+    <string name="udesk_navi_im_title_offline">离线消息</string>
+    <string name="udesk_navi_im_title_online">会话</string>
+    <string name="udesk_navi_open_im">联系我们</string>
+    <string name="udesk_no_more_history">本地已经没有历史记录了</string>
+    <string name="udesk_not_find_customer_service">没有找到可用的客服！</string>
+    <string name="udesk_ok">确定</string>
+    <string name="udesk_rate_dialog_message">如果你喜欢我们的应用，请花点时间给我们点赞</string>
+    <string name="udesk_rate_dialog_title">给应用评分</string>
+    <string name="udesk_rate_feedback">发送反馈</string>
+    <string name="udesk_rate_grade">评分</string>
+    <string name="udesk_release_to_get_more">松开拉取记录</string>
+    <string name="udesk_retry">重发</string>
+    <string name="udesk_save">保存</string>
+    <string name="udesk_send_message">发送</string>
+    <string name="udesk_send_message_empty">不能发送空消息.</string>
+    <string name="udesk_success_save_image">成功保存到</string>
+    <string name="udesk_upload_file">上传文件</string>
+    <string name="udesk_upload_image">正在上传图片…</string>
+    <string name="udesk_upload_image_error">图片上传失败，请重试！</string>
+    <string name="udesk_upload_image_forbidden">暂时无法上传，下载图片！</string>
+    <string name="udesk_upload_image_process">正在处理图片…</string>
+    <string name="udesk_upload_record">正在上传录音…</string>
+    <string name="udesk_upload_record_error">录音上传失败，请重试！</string>
+    <string name="udesk_upload_record_process">正在处理录音文件…</string>
+    <!-- From: file:/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/uDesklibrary/src/main/res/values/udesk_styles.xml -->
+    <eat-comment/>
+    <style name="Udesk_Theme" parent="android:Theme.Translucent.NoTitleBar"/>
+    <style name="udesk_navi_button_text_style">
+        <item name="android:gravity">center</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">@color/udesk_color_navi_text</item>
+        <item name="android:textSize">@dimen/udesk_navi_text_size</item>
+        <item name="android:ellipsize">middle</item>
+        <item name="android:singleLine">true</item>
+        <item name="android:drawablePadding">3dp</item>
+    </style>
+</resources>

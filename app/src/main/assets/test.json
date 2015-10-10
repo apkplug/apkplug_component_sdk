@@ -9,5 +9,15 @@
     "symbolicName":"com.gt.plug",
     "version" :"1.00","appid":"123457",
     "assetsPath":"GtPlug.apk",
-    "osgiServerClassName":"com.gt.plug.GtSDK"}
+    "osgiServerClassName":"com.gt.plug.GtSDK"},
+  { "plugName":"ChatUIDemo",
+    "symbolicName":"com.easemob.chatuidemo",
+    "version" :"1.00","appid":"123458",
+    "assetsPath":"ChatUIDemo-debug.apk",
+    "osgiServerClassName":"com.plug.LaunchPlug"},
+  { "plugName":"UdeskDemo",
+    "symbolicName":"cn.udesk.saas.demo",
+    "version" :"1.00","appid":"123459",
+    "assetsPath":"udesk_android_sdk_demo.apk",
+    "osgiServerClassName":"com.plug.LaunchPlug"}
 ]}

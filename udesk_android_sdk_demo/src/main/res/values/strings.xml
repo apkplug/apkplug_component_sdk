@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">UDesk SDK Demo</string>
+    <string name="welcome">欢迎使用UDesk SDK\n以下是展示UDesk功能的按钮</string>
+    <string name="udesk_subdomain">UDesk分配的二级域名</string>
+    <string name="udesk_secret">UDesk分配的密钥</string>
+    <string name="func_helper">帮助中心</string>
+    <string name="func_im">在线解答</string>
+    <string name="func_all">功能集合</string>
+</resources>

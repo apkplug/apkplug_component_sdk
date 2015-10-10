@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/udesk_bottom"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:gravity="center_vertical"
+    android:orientation="horizontal"
+    android:paddingBottom="2dp"
+    android:paddingLeft="10dp"
+    android:paddingRight="10dp"
+    android:paddingTop="2dp" >
+
+    <ImageView
+        android:id="@+id/udesk_bottom_show_emoji"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="12dp"
+        android:src="@drawable/udesk_im_input_emoji_selector"
+        android:visibility="gone" />
+
+    <ImageView
+        android:id="@+id/udesk_bottom_show_option"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+        android:layout_toRightOf="@id/udesk_bottom_show_emoji"
+        android:src="@drawable/udesk_im_input_options_selector"
+        android:visibility="gone" />
+
+    <EditText
+        android:id="@+id/udesk_bottom_input"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/udesk_bottom_right_panel"
+        android:layout_toRightOf="@id/udesk_bottom_show_option"
+        android:gravity="center_vertical"
+        android:background="@drawable/udesk_im_input_bg"
+        android:maxHeight="70dp"
+        android:singleLine="false"
+        android:textColor="#ff606060"
+        android:paddingLeft="10dp"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/udesk_im_long_voice_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:maxHeight="70dp"
+        android:layout_toLeftOf="@+id/udesk_bottom_right_panel"
+        android:layout_toRightOf="@id/udesk_bottom_show_option"
+        android:background="@drawable/udesk_im_record_long_bg"
+        android:focusable="true"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:scrollHorizontally="false"
+        android:text="@string/udesk_label_im_long_voice"
+        android:visibility="gone" />
+    
+    <FrameLayout
+        android:id="@+id/udesk_bottom_right_panel"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="8dp" >
+
+        <TextView
+            android:id="@+id/udesk_bottom_send"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:background="@drawable/udesk_im_send_selector"
+            android:gravity="center"
+            android:lines="1"
+            android:padding="8dp"
+            android:textColor="#ffffffff"
+            android:textSize="16sp" />
+
+        <ImageView
+            android:id="@+id/udesk_bottom_recore_keyboard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center" />
+    </FrameLayout>
+
+</RelativeLayout><!-- From: file:/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/uDesklibrary/src/main/res/layout/udesk_im_bottom_panel.xml --><!-- From: file:/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/udesk_android_sdk_demo/build/intermediates/exploded-aar/apkplug_component_sdk/uDesklibrary/unspecified/res/layout/udesk_im_bottom_panel.xml -->
