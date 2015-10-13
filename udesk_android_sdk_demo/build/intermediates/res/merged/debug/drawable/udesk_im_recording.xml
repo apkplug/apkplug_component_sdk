@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<animation-list xmlns:android="http://schemas.android.com/apk/res/android"  >
-    <item android:drawable="@drawable/udesk_im_recording1" android:duration="300"></item>
-    <item android:drawable="@drawable/udesk_im_recording2" android:duration="300"></item>
-    <item android:drawable="@drawable/udesk_im_recording3" android:duration="300"></item>
-    <item android:drawable="@drawable/udesk_im_recording4" android:duration="300"></item>   
-</animation-list>
-<!-- From: file:/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/uDesklibrary/src/main/res/drawable/udesk_im_recording.xml --><!-- From: file:/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/udesk_android_sdk_demo/build/intermediates/exploded-aar/apkplug_component_sdk/uDesklibrary/unspecified/res/drawable/udesk_im_recording.xml -->

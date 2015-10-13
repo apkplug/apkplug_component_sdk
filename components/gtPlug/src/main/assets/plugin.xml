@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin-features
+	Bundle-Name="GtPlug" 
+	Bundle-SymbolicName="com.gt.plug"	
+	Bundle-Version="1.0"
+	date="2015.9.9"
+	provider-name="Apkplug" 
+	provider-url="" 
+	Bundle-Activator="com.gt.SimpleBundle"
+	Bundle-Activity="com.gt.MainActivity"
+	>
+</plugin-features>

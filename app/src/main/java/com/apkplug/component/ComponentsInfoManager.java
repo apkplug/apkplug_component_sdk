@@ -44,7 +44,7 @@ public class ComponentsInfoManager implements  ComponentsInfo{
         String componentInfoListString=null;
         try {
 
-            InputStreamReader inputStreamReader = new InputStreamReader(ProxyApplication.getContext().getAssets().open("test.json"), "UTF-8");
+            InputStreamReader inputStreamReader = new InputStreamReader(ProxyApplication.getContext().getAssets().open("components.json"), "UTF-8");
             BufferedReader bufferedReader = new BufferedReader(inputStreamReader);//使用BufferReader读取输入流中的数据；
             String line;
             StringBuilder stringBuilder = new StringBuilder();//所有读取的json放到StringBuilder中，这里也可以使用StringBuffer,效果一样；

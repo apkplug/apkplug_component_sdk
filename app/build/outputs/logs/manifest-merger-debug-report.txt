@@ -1,6 +1,6 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:2:1-186:12
+ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:2:1-214:12
 	package
 		ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:3:5-45
 		INJECTED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml
@@ -298,76 +298,80 @@ uses-permission#android.permission.SEND_SMS
 ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:136:5-67
 	android:name
 		ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:136:22-64
+uses-permission#android.permission.USE_CREDENTIALS
+ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:158:5-74
+	android:name
+		ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:158:22-71
 application
-ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:141:5-184:19
+ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:169:5-212:19
 MERGED from [com.android.support:support-v4:20.0.0] /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/AndroidManifest.xml:17:5-19
 	android:label
-		ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:145:9-41
+		ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:173:9-41
 	android:allowBackup
-		ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:143:9-35
+		ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:171:9-35
 	android:icon
-		ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:144:9-45
+		ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:172:9-45
 	android:theme
-		ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:146:9-40
+		ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:174:9-40
 	android:name
-		ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:142:9-53
+		ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:170:9-53
 meta-data#apkplug-auth
-ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:147:9-251
+ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:175:9-251
 	android:value
-		ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:147:49-237
+		ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:175:49-237
 	android:name
-		ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:147:21-48
+		ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:175:21-48
 meta-data#EASEMOB_APPKEY
-ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:148:9-150:55
+ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:176:9-178:55
 	android:value
-		ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:150:13-52
+		ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:178:13-52
 	android:name
-		ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:149:13-42
+		ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:177:13-42
 activity#com.activity.MaketionActivity
-ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:151:9-155:20
+ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:179:9-183:20
 	android:label
-		ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:153:13-45
+		ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:181:13-45
 	android:name
-		ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:152:13-57
+		ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:180:13-57
 activity#org.apkplug.app.apkplugActivity
-ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:156:9-163:20
+ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:184:9-191:20
 	android:configChanges
-		ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:158:13-74
+		ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:186:13-74
 	android:theme
-		ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:159:13-72
+		ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:187:13-72
 	android:name
-		ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:157:13-59
+		ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:185:13-59
 intent-filter#android.intent.action.MAIN
-ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:160:13-162:29
+ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:188:13-190:29
 action#android.intent.action.MAIN
-ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:161:17-69
+ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:189:17-69
 	android:name
-		ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:161:25-66
+		ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:189:25-66
 service#org.apkplug.app.apkplugService
-ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:165:9-66
+ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:193:9-66
 	android:name
-		ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:165:18-63
+		ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:193:18-63
 provider#org.apkplug.app.apkplugProvider
-ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:167:9-169:84
+ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:195:9-197:84
 	android:authorities
-		ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:169:13-81
+		ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:197:13-81
 	android:name
-		ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:168:13-59
+		ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:196:13-59
 activity#com.activity.MainActivity
-ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:171:9-179:20
+ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:199:9-207:20
 	android:label
-		ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:173:13-56
+		ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:201:13-56
 	android:name
-		ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:172:13-53
+		ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:200:13-53
 intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:174:13-178:29
+ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:202:13-206:29
 category#android.intent.category.LAUNCHER
-ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:177:17-77
+ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:205:17-77
 	android:name
-		ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:177:27-74
+		ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:205:27-74
 activity#com.activity.TestActivity
-ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:180:9-183:20
+ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:208:9-211:20
 	android:label
-		ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:182:13-36
+		ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:210:13-36
 	android:name
-		ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:181:13-53
+		ADDED from /Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/src/main/AndroidManifest.xml:209:13-53

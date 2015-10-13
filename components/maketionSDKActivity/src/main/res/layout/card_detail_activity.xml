@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:layout_width="fill_parent"
+        android:layout_height="50dip"
+        android:gravity="center"
+        android:text="名片的详细信息" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="45dip"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:text="姓名:" />
+
+                <EditText
+                    android:id="@+id/maketionsdk_card_detail_name_et"
+                    android:layout_width="0dip"
+                    android:layout_height="45dip"
+                    android:layout_weight="4"
+                    android:inputType="text" />
+            </LinearLayout>
+            <!-- 头衔 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="45dip"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:text="头衔:" />
+
+                <EditText
+                    android:id="@+id/maketionsdk_card_detail_duty_et"
+                    android:layout_width="0dip"
+                    android:layout_height="45dip"
+                    android:layout_weight="4"
+                    android:inputType="text" />
+            </LinearLayout>
+            <!-- 手机1 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="45dip"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:text="手机1:" />
+
+                <EditText
+                    android:id="@+id/maketionsdk_card_detail_mobile1_et"
+                    android:layout_width="0dip"
+                    android:layout_height="45dip"
+                    android:layout_weight="4"
+                    android:inputType="text" />
+            </LinearLayout>
+            <!-- 手机2 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="45dip"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:text="手机2:" />
+
+                <EditText
+                    android:id="@+id/maketionsdk_card_detail_mobile2_et"
+                    android:layout_width="0dip"
+                    android:layout_height="45dip"
+                    android:layout_weight="4"
+                    android:inputType="text" />
+            </LinearLayout>
+            <!-- 邮箱 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="45dip"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:text="邮箱 :" />
+
+                <EditText
+                    android:id="@+id/maketionsdk_card_detail_email_et"
+                    android:layout_width="0dip"
+                    android:layout_height="45dip"
+                    android:layout_weight="4"
+                    android:inputType="textEmailAddress" />
+            </LinearLayout>
+            <!-- 电话1 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="45dip"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:text="电话1:" />
+
+                <EditText
+                    android:id="@+id/maketionsdk_card_detail_tel1_et"
+                    android:layout_width="0dip"
+                    android:layout_height="45dip"
+                    android:layout_weight="4"
+                    android:inputType="text" />
+            </LinearLayout>
+            <!-- 电话2 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="45dip"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:text="电话2:" />
+
+                <EditText
+                    android:id="@+id/maketionsdk_card_detail_tel2_et"
+                    android:layout_width="0dip"
+                    android:layout_height="45dip"
+                    android:layout_weight="4"
+                    android:inputType="text" />
+            </LinearLayout>
+            <!-- 传真 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="45dip"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:text="传真:" />
+
+                <EditText
+                    android:id="@+id/maketionsdk_card_detail_fax_et"
+                    android:layout_width="0dip"
+                    android:layout_height="45dip"
+                    android:layout_weight="4"
+                    android:inputType="text" />
+            </LinearLayout>
+            <!-- 公司名 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="45dip"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:text="公司名:" />
+
+                <EditText
+                    android:id="@+id/maketionsdk_card_detail_cname_et"
+                    android:layout_width="0dip"
+                    android:layout_height="45dip"
+                    android:layout_weight="4"
+                    android:inputType="text" />
+            </LinearLayout>
+            <!-- 地址 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="45dip"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:text="地址:" />
+
+                <EditText
+                    android:id="@+id/maketionsdk_card_detail_address_et"
+                    android:layout_width="0dip"
+                    android:layout_height="45dip"
+                    android:layout_weight="4"
+                    android:inputType="text" />
+            </LinearLayout>
+            <!-- 网址 -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dip"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:layout_width="0dip"
+                    android:layout_height="45dip"
+                    android:layout_weight="1"
+                    android:gravity="center_vertical|right"
+                    android:text="网址:" />
+
+                <EditText
+                    android:id="@+id/maketionsdk_card_detail_web_et"
+                    android:layout_width="0dip"
+                    android:layout_height="45dip"
+                    android:layout_weight="4"
+                    android:inputType="text" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

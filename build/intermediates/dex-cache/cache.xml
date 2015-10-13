@@ -2,53 +2,11 @@
 <items version="2" >
 
     <item
-        jar="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/libs/GtSDK.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="9de30b304d074718ba464e9c0bf33964d7dd61ef">
-        <dex dex="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/build/intermediates/pre-dexed/debug/GtSDK-e7aef63dc801340f954a8b3789a806f44d5481d1.jar" />
-    </item>
-    <item
-        jar="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/udesk_android_sdk_demo/build/intermediates/exploded-aar/apkplug_component_sdk/uDesklibrary/unspecified/jars/libs/asmack-android-8-4.0.6.jar"
+        jar="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/components/udesk_android_sdk_demo/build/intermediates/exploded-aar/apkplug_component_sdk/uDesklibrary/unspecified/jars/classes.jar"
         jumboMode="false"
         revision="23.0.1"
-        sha1="66ab71c53ba9776f12b3189271dcea91014195de">
-        <dex dex="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/udesk_android_sdk_demo/build/intermediates/pre-dexed/debug/asmack-android-8-4.0.6-920d12fca1658709474a684431e9cdb1689df601.jar" />
-    </item>
-    <item
-        jar="/Users/qinfeng/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3.1/ecb6e1f8e4b0e84c4b886c2f14a1500caf309757/gson-2.3.1.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
-        <dex dex="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/build/intermediates/pre-dexed/debug/gson-2.3.1-c5f8464250fd2cece7c426717ba684f9c6806d1b.jar" />
-    </item>
-    <item
-        jar="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/udesk_android_sdk_demo/build/intermediates/exploded-aar/apkplug_component_sdk/uDesklibrary/unspecified/jars/libs/android-async-http-1.4.6.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="a845a88238be0b5be9d238652c1bc0605ef91f52">
-        <dex dex="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/udesk_android_sdk_demo/build/intermediates/pre-dexed/debug/android-async-http-1.4.6-fb007d290cdf335a245aa4108f0c2e97a173fce7.jar" />
-    </item>
-    <item
-        jar="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/udesk_android_sdk_demo/build/intermediates/exploded-aar/apkplug_component_sdk/uDesklibrary/unspecified/jars/libs/udesk_sdk_2.0.7.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="5301cbe2cb4a4c457e4052d88e88eb4f55e408dd">
-        <dex dex="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/udesk_android_sdk_demo/build/intermediates/pre-dexed/debug/udesk_sdk_2.0.7-9733b94ac87cbe5031476929a771bdc0160adef7.jar" />
-    </item>
-    <item
-        jar="/Applications/cocos2dx/V3.5/adt-bundle/sdk/extras/android/m2repository/com/android/support/support-annotations/20.0.0/support-annotations-20.0.0.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa">
-        <dex dex="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/build/intermediates/pre-dexed/debug/support-annotations-20.0.0-b3605ba51db2dcff63581e6a026ee1e445466331.jar" />
-    </item>
-    <item
-        jar="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/udesk_android_sdk_demo/build/intermediates/exploded-aar/apkplug_component_sdk/uDesklibrary/unspecified/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="c5d5a521ed49145c6f838174dfa16969cd6e2eed">
-        <dex dex="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/udesk_android_sdk_demo/build/intermediates/pre-dexed/debug/classes-141410d0c12265ddd30ea686ece6660bee6baa60.jar" />
+        sha1="5934dd52e5210ed42d628f9a27b178559e78eba7">
+        <dex dex="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/components/udesk_android_sdk_demo/build/intermediates/pre-dexed/debug/classes-b5f072a19ec58f9cbb97f21664c12cf472b1806e.jar" />
     </item>
     <item
         jar="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/libs/BundleCloud2.8.5-Release.jar"
@@ -58,6 +16,83 @@
         <dex dex="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/build/intermediates/pre-dexed/debug/BundleCloud2.8.5-Release-1652da8ebb4c0a3522ab4fb8ae09ae075e9e3147.jar" />
     </item>
     <item
+        jar="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/components/gtPlug/build/intermediates/exploded-aar/apkplug_component_sdk/gtAndroidSDK/unspecified/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="eeacc9dd472a303d9095ea37afcadb7e60aef2df">
+        <dex dex="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/components/gtPlug/build/intermediates/pre-dexed/debug/classes-847c9c9c962f4dedcd33c1c546c31a54602afbe8.jar" />
+    </item>
+    <item
+        jar="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/components/udesk_android_sdk_demo/build/intermediates/exploded-aar/apkplug_component_sdk/uDesklibrary/unspecified/jars/libs/asmack-android-8-4.0.6.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="66ab71c53ba9776f12b3189271dcea91014195de">
+        <dex dex="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/components/udesk_android_sdk_demo/build/intermediates/pre-dexed/debug/asmack-android-8-4.0.6-9899d71b343e2ada6297cbf0def0289d38b01e40.jar" />
+    </item>
+    <item
+        jar="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/components/maketionSDKActivity/libs/ScanCardSdk.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="2976d7783b0d93957de5e36392c9d15b4b89988f">
+        <dex dex="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/components/maketionSDKActivity/build/intermediates/pre-dexed/debug/ScanCardSdk-b89ea45bd4150c40736e08a79410f908798f37a3.jar" />
+    </item>
+    <item
+        jar="/Applications/cocos2dx/V3.5/adt-bundle/sdk/extras/android/m2repository/com/android/support/support-annotations/20.0.0/support-annotations-20.0.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa">
+        <dex dex="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/components/maketionSDKActivity/build/intermediates/pre-dexed/debug/support-annotations-20.0.0-b3605ba51db2dcff63581e6a026ee1e445466331.jar" />
+    </item>
+    <item
+        jar="/Applications/cocos2dx/V3.5/adt-bundle/sdk/extras/android/m2repository/com/android/support/support-annotations/20.0.0/support-annotations-20.0.0.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="9d9013e9ff35fc3756411e62873c363c70c638fa">
+        <dex dex="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/build/intermediates/pre-dexed/debug/support-annotations-20.0.0-b3605ba51db2dcff63581e6a026ee1e445466331.jar" />
+    </item>
+    <item
+        jar="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/libs/GtSDK.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="9de30b304d074718ba464e9c0bf33964d7dd61ef">
+        <dex dex="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/build/intermediates/pre-dexed/debug/GtSDK-e7aef63dc801340f954a8b3789a806f44d5481d1.jar" />
+    </item>
+    <item
+        jar="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/components/maketionSDKActivity/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="8694693636ab36910c8100ce527c258ff3ebece0">
+        <dex dex="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/components/maketionSDKActivity/build/intermediates/pre-dexed/debug/classes-44a7ad6d2d5021c9cd55fe6fa88aecb1fc2dac9b.jar" />
+    </item>
+    <item
+        jar="/Users/qinfeng/.gradle/caches/modules-2/files-2.1/com.google.code.gson/gson/2.3.1/ecb6e1f8e4b0e84c4b886c2f14a1500caf309757/gson-2.3.1.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="ecb6e1f8e4b0e84c4b886c2f14a1500caf309757">
+        <dex dex="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/build/intermediates/pre-dexed/debug/gson-2.3.1-c5f8464250fd2cece7c426717ba684f9c6806d1b.jar" />
+    </item>
+    <item
+        jar="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/components/udesk_android_sdk_demo/build/intermediates/exploded-aar/apkplug_component_sdk/uDesklibrary/unspecified/jars/libs/android-async-http-1.4.6.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="a845a88238be0b5be9d238652c1bc0605ef91f52">
+        <dex dex="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/components/udesk_android_sdk_demo/build/intermediates/pre-dexed/debug/android-async-http-1.4.6-957eb5f9c59d89c00319722a5a18285b87f764a8.jar" />
+    </item>
+    <item
+        jar="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/components/udesk_android_sdk_demo/build/intermediates/exploded-aar/apkplug_component_sdk/uDesklibrary/unspecified/jars/libs/udesk_sdk_2.0.7.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="5301cbe2cb4a4c457e4052d88e88eb4f55e408dd">
+        <dex dex="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/components/udesk_android_sdk_demo/build/intermediates/pre-dexed/debug/udesk_sdk_2.0.7-77c56efac7c62652cf3a94527779692318f6595e.jar" />
+    </item>
+    <item
+        jar="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/components/gtPlug/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/jars/libs/internal_impl-20.0.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d">
+        <dex dex="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/components/gtPlug/build/intermediates/pre-dexed/debug/internal_impl-20.0.0-82237ba85cfa894c8249b6f9d10581eeb7e3119c.jar" />
+    </item>
+    <item
         jar="/Users/qinfeng/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife/7.0.0/f1e24ac977505d1fdcabadaa5be1f41dc11c4286/butterknife-7.0.0.jar"
         jumboMode="false"
         revision="23.0.0"
@@ -65,11 +100,39 @@
         <dex dex="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/build/intermediates/pre-dexed/debug/butterknife-7.0.0-d5ff35210c9581b822ce38c2bedae0ecb01d8d4f.jar" />
     </item>
     <item
-        jar="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/udesk_android_sdk_demo/build/intermediates/exploded-aar/apkplug_component_sdk/uDesklibrary/unspecified/jars/libs/apiEngine_v1.1.0.jar"
+        jar="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/components/udesk_android_sdk_demo/build/intermediates/exploded-aar/apkplug_component_sdk/uDesklibrary/unspecified/jars/libs/apiEngine_v1.1.0.jar"
         jumboMode="false"
         revision="23.0.1"
         sha1="1cb373a8dfbb9b235569e165e060302f7b44ab01">
-        <dex dex="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/udesk_android_sdk_demo/build/intermediates/pre-dexed/debug/apiEngine_v1.1.0-1d8f0eb688bc48c8a12e1595b046f2b0a7342137.jar" />
+        <dex dex="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/components/udesk_android_sdk_demo/build/intermediates/pre-dexed/debug/apiEngine_v1.1.0-6ae1c6912a6f20816d3fd1515cbeaa97c5cc50c4.jar" />
+    </item>
+    <item
+        jar="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/components/maketionSDKActivity/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/jars/libs/internal_impl-20.0.0.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d">
+        <dex dex="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/components/maketionSDKActivity/build/intermediates/pre-dexed/debug/internal_impl-20.0.0-616fb9f5abfaea690fb671d09f5fd808bae91467.jar" />
+    </item>
+    <item
+        jar="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/components/gtPlug/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="8694693636ab36910c8100ce527c258ff3ebece0">
+        <dex dex="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/components/gtPlug/build/intermediates/pre-dexed/debug/classes-2ea15955333bbf61d68097266c19e77b6224ec3d.jar" />
+    </item>
+    <item
+        jar="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/components/udesk_android_sdk_demo/build/intermediates/exploded-aar/apkplug_component_sdk/uDesklibrary/unspecified/jars/libs/qiniu-android-sdk-7.0.1.jar"
+        jumboMode="false"
+        revision="23.0.1"
+        sha1="a72b1397972cac384349e840ed587e4c79e72180">
+        <dex dex="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/components/udesk_android_sdk_demo/build/intermediates/pre-dexed/debug/qiniu-android-sdk-7.0.1-fe74f647f72f15e258c102fb56bf5a6e27e548f7.jar" />
+    </item>
+    <item
+        jar="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/jars/classes.jar"
+        jumboMode="false"
+        revision="23.0.0"
+        sha1="8694693636ab36910c8100ce527c258ff3ebece0">
+        <dex dex="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/build/intermediates/pre-dexed/debug/classes-a7cd9139cdb4a2421377583744d1de118a55bcf2.jar" />
     </item>
     <item
         jar="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/libs/LaunchPlug.jar"
@@ -84,20 +147,6 @@
         revision="23.0.0"
         sha1="e40b3078e3fbd353c9f44da8df25a8fc0078209d">
         <dex dex="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/build/intermediates/pre-dexed/debug/internal_impl-20.0.0-7c8b3ba1b69e1fb3969b025ac0490a49021fb558.jar" />
-    </item>
-    <item
-        jar="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/build/intermediates/exploded-aar/com.android.support/support-v4/20.0.0/jars/classes.jar"
-        jumboMode="false"
-        revision="23.0.0"
-        sha1="8694693636ab36910c8100ce527c258ff3ebece0">
-        <dex dex="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/app/build/intermediates/pre-dexed/debug/classes-a7cd9139cdb4a2421377583744d1de118a55bcf2.jar" />
-    </item>
-    <item
-        jar="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/udesk_android_sdk_demo/build/intermediates/exploded-aar/apkplug_component_sdk/uDesklibrary/unspecified/jars/libs/qiniu-android-sdk-7.0.1.jar"
-        jumboMode="false"
-        revision="23.0.1"
-        sha1="a72b1397972cac384349e840ed587e4c79e72180">
-        <dex dex="/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/udesk_android_sdk_demo/build/intermediates/pre-dexed/debug/qiniu-android-sdk-7.0.1-64f54c658a09f6c0c2a353541c72695a5df74628.jar" />
     </item>
 
 </items>

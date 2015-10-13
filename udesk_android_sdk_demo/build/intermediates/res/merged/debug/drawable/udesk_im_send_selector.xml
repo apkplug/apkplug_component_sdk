@@ -1,7 +1,0 @@
-<?xml version="1.0" encoding="utf-8"?>
-<selector
-  xmlns:android="http://schemas.android.com/apk/res/android">
-    <item android:state_pressed="true" android:drawable="@drawable/udesk_im_send_press" />
-    <item android:state_selected="true" android:drawable="@drawable/udesk_im_send_press" />
-    <item android:drawable="@drawable/udesk_im_send" />
-</selector><!-- From: file:/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/uDesklibrary/src/main/res/drawable/udesk_im_send_selector.xml --><!-- From: file:/Users/qinfeng/Documents/AndroidStudioProjects/apkplug_component_sdk/udesk_android_sdk_demo/build/intermediates/exploded-aar/apkplug_component_sdk/uDesklibrary/unspecified/res/drawable/udesk_im_send_selector.xml -->
