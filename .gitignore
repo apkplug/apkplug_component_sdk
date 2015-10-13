@@ -1,4 +1,4 @@
-# files for the dex VM
+git# files for the dex VM
 *.dex
 
 # Java class files
