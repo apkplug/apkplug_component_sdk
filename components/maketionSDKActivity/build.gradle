@@ -22,5 +22,5 @@ dependencies {
     compile 'com.android.support:support-v4:20.0.0'
     compile files('libs/ScanCardSdk.jar')
     provided files('libs/osgi2.0.0.jar')
-    provided files('libs/component0.1.jar')
+    provided files('libs/componentsdkV1.jar')
 }

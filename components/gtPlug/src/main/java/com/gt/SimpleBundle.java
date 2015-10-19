@@ -1,21 +1,21 @@
 package com.gt;
+import com.apkplug.component.geetestsdk.GeeTest;
+
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 import org.osgi.framework.ServiceRegistration;
 
-import com.gt.plug.GtSDK;
-
 public class SimpleBundle implements BundleActivator
 {
-	//private IMaketionCardSDK mIMaketionCardSDK=null;
-	private GtSDK mGtSDK=null;
+
+	private GeeTest mGeeTest=null;
 	private ServiceRegistration mReg = null;
 
     public void start(BundleContext context) throws Exception
     {
     	System.err.println("BundleId为："+context.getBundle().getBundleId()+"的"+context.getBundle().getName()+"插件已经启动了");
-    	mGtSDK=new GtSDKImp(context.getAndroidContext());
-    	mReg=context.registerService(GtSDK.class.getName(), mGtSDK, null);
+        mGeeTest=new GeeTestImp(context.getAndroidContext());
+    	mReg=context.registerService(GeeTest.class.getName(), mGeeTest, null);
 
     }
    

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin-features
+	Bundle-Name="sharesdkdemo" 
+	Use-Bundle-Resources="true"
+	Bundle-SymbolicName="cn.sharesdk.demo"	
+	Bundle-Version="1.0"
+	date="2015.10.13"
+	provider-name="Apkplug" 
+	provider-url="" 
+	Bundle-Activator="cn.sharesdk.plug.SimpleBundle"
+	Bundle-Service="cn.sharesdk.tencent.qq.ResultReceiver,cn.sharesdk.demo.wxapi.WXEntryActivity,cn.sharesdk.demo.yxapi.YXEntryActivity,cn.sharesdk.demo.apshare.ShareEntryActivity,com.sina.weibo.sdk.component.WeiboSdkBrowser,cn.sharesdk.sina.weibo.SinaActivity,"
+	>
+</plugin-features>

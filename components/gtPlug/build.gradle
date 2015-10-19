@@ -20,6 +20,6 @@ android {
 
 dependencies {
     compile project(':gtAndroidSDK')
-    provided files('libs/GtSDK.jar')
     provided files('libs/osgi2.0.0.jar')
+    provided files('libs/componentsdkV1.jar')
 }

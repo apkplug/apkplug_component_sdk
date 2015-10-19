@@ -11,3 +11,5 @@ include ':uDesklibrary'
 project(':uDesklibrary').projectDir=new File('components/uDesklibrary')
 include ':udesk_android_sdk_demo'
 project(':udesk_android_sdk_demo').projectDir=new File('components/udesk_android_sdk_demo')
+include ':sharesdk_demo'
+project(':sharesdk_demo').projectDir=new File('components/sharesdk_demo')

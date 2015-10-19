@@ -1,5 +1,7 @@
 package com.apkplug.component;
 
+import android.util.Log;
+
 import org.apkplug.Bundle.InstallBundler;
 import org.apkplug.Bundle.OSGIServiceAgent;
 import org.apkplug.Bundle.installCallback;
@@ -15,20 +17,20 @@ public class ComponentManager{
 	    _instance=new ComponentManager();
 	    }
 	    return _instance;
-	} 
+	}
 	private ComponentManager(){
-		
+
 	}
 	private BundleContext bContext;
 	private InstallBundler ib;
 	public void onInit(BundleContext bContext){
-		
+
 		this.bContext=bContext;
 		ib=new InstallBundler(bContext);
-		
+
 	}
 	public void onDestroy(){
-		
+
 	}
 	public void searchComponent(final ComponentInfo componentInfo ,final ServerCallback callback){
 		if (componentInfo==null) {
@@ -36,12 +38,15 @@ public class ComponentManager{
 		}else {
 			final OSGIServiceAgent agent=new OSGIServiceAgent(bContext,componentInfo.getOsgiServer(),OSGIServiceAgent.real_time);
 			try {
-				Object service=agent.getService();
-				if(service!=null){
+				Base service = (Base) agent.getService();
+				if (service.version() >=service.versionInPlug()) {
+					Log.e(""," 插件sdk版本低于宿主sdk版本");
+					}
+				if (service != null) {
 					callback.onSuccess(service);
 					return;
 				}
-			} catch (Exception e1) {
+			}catch (Exception e1) {
 				// TODO Auto-generated catch block
 				e1.printStackTrace();
 			}
@@ -68,12 +73,12 @@ public class ComponentManager{
 					return;
 				}
 			}
-			
+
 			if(componentInfo.getAssetsPath()!=null){
 				ib.installForAssets(
 						componentInfo.getAssetsPath(),
 						componentInfo.getVersion(),
-						null, 
+						null,
 						new installCallback(){
 							@Override
 							public void callback(int status, Bundle bundle) {
@@ -84,7 +89,7 @@ public class ComponentManager{
 										// TODO Auto-generated catch block
 										e.printStackTrace();
 									}
-									
+
 									//再次查询支付Service
 									try {
 										Object service=agent.getService();
@@ -100,10 +105,10 @@ public class ComponentManager{
 							}
 						});
 			}
-			callback.onFailure(0, "无法获取服务");
-		}
 
+		}
+		callback.onFailure(0, "无法获取服务");
 	}
-	
-	
+
+
 }

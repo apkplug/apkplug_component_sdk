@@ -2,7 +2,7 @@ package com.apkplug.component;
 
 
 public class ComponentFactory {
-	private final String TAG="ComponentFactory";
+
 	private static ComponentFactory _instance=null;
 	private ComponentsInfo mComponentInfoManager=null;
 

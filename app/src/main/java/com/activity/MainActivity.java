@@ -13,8 +13,10 @@ import android.widget.Toast;
 import com.apkplug.component.ComponentFactory;
 import com.apkplug.component.ComponentManager;
 import com.apkplug.component.ServerCallback;
+import com.apkplug.component.easemobimsdk.EaseMobIM;
+import com.apkplug.component.sharesdk.ShareSdk;
+import com.apkplug.component.udesksdk.Udesk;
 import com.demo.apkplug_component_sdk.R;
-import com.plug.LaunchPlug;
 
 import java.util.ArrayList;
 
@@ -30,8 +32,6 @@ public class MainActivity extends Activity {
     ListView mListView;
     private ArrayList<String> mPlugNames=new ArrayList<String>();
     private ArrayAdapter<String> mAdapter=null ;
-
-    private LaunchPlug mLaunchPlug=null;
 
     // Create a message handling object as an anonymous class.
     private AdapterView.OnItemClickListener mMessageClickedHandler = new AdapterView.OnItemClickListener() {
@@ -49,13 +49,12 @@ public class MainActivity extends Activity {
             {
                 ComponentManager.getInstance().searchComponent(
                         ComponentFactory.getInstance().getComponent("ChatUIDemo"), //从组件工厂中获取指定的组件ComponentUid
-                        new ServerCallback<LaunchPlug>() {
+                        new ServerCallback<EaseMobIM>() {
                             @Override
-                            public void onSuccess(LaunchPlug launchPlug) {
+                            public void onSuccess(EaseMobIM easeMobIM) {
                                 //成功获取到了组件的服务
                                 Toast.makeText(MainActivity.this, "ChatUIDemo服务获取成功！", Toast.LENGTH_SHORT).show();
-                                mLaunchPlug = launchPlug;
-                                mLaunchPlug.launchPlug();
+                                easeMobIM.start();
 
                             }
 
@@ -69,19 +68,37 @@ public class MainActivity extends Activity {
             {
                 ComponentManager.getInstance().searchComponent(
                         ComponentFactory.getInstance().getComponent("UdeskDemo"), //从组件工厂中获取指定的组件ComponentUid
-                        new ServerCallback<LaunchPlug>(){
+                        new ServerCallback<Udesk>() {
                             @Override
-                            public void onSuccess(LaunchPlug launchPlug) {
+                            public void onSuccess(Udesk udesk) {
                                 //成功获取到了组件的服务
                                 Toast.makeText(MainActivity.this, "UdeskDemo服务获取成功！", Toast.LENGTH_SHORT).show();
-                                mLaunchPlug=launchPlug;
-                                mLaunchPlug.launchPlug();
+                                udesk.start();
 
                             }
 
                             @Override
                             public void onFailure(int errorNo, String strMsg) {
                                 Toast.makeText(MainActivity.this, strMsg, Toast.LENGTH_SHORT).show();
+                            }
+                        });
+            }
+            if (mPlugNames.get(position).equals("sharesdkdemo"))
+            {
+                ComponentManager.getInstance().searchComponent(
+                        ComponentFactory.getInstance().getComponent("sharesdkdemo"), //从组件工厂中获取指定的组件ComponentUid
+                        new ServerCallback<ShareSdk>(){
+                            @Override
+                            public void onSuccess(ShareSdk shareSdk) {
+                                //成功获取到了组件的服务
+                                Toast.makeText(MainActivity.this, "sharesdkdemo服务获取成功！", Toast.LENGTH_SHORT).show();
+                                shareSdk.start();
+
+                            }
+
+                            @Override
+                            public void onFailure(int errorNo, String strMsg) {
+                               // Toast.makeText(MainActivity.this, strMsg, Toast.LENGTH_SHORT).show();
                             }});
             }
 

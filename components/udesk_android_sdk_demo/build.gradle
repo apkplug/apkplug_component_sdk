@@ -20,6 +20,6 @@ android {
 
 dependencies {
     compile project(':uDesklibrary')
-    provided files('libs/LaunchPlug.jar')
     provided files('libs/osgi2.0.0.jar')
+    provided files('libs/componentsdkV1.jar')
 }

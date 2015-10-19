@@ -36,7 +36,7 @@ public class TransparentActivity extends Activity {
 	protected void onStart() {
 		// TODO Auto-generated method stub
 		super.onStart();
-		GtSDKImp.mGeetestLib.setCaptchaId(GtSDKImp.mCaptcha_id);
+		GeeTestImp.mGeetestLib.setCaptchaId(GeeTestImp.mCaptcha_id);
 		new GtAppDlgTask().execute();
 	}
 
@@ -44,7 +44,7 @@ public class TransparentActivity extends Activity {
 
 		@Override
 		protected Integer doInBackground(Void... params) {
-			return GtSDKImp.mGeetestLib.preProcess();
+			return GeeTestImp.mGeetestLib.preProcess();
 		}
 
 		@Override
@@ -52,8 +52,8 @@ public class TransparentActivity extends Activity {
 
 			if (serverStatusCode == 1) {
 
-				sdkInitData.setCaptcha_id(GtSDKImp.mCaptcha_id);
-				sdkInitData.setChallenge_id(GtSDKImp.mGeetestLib.getChallengeId());
+				sdkInitData.setCaptcha_id(GeeTestImp.mCaptcha_id);
+				sdkInitData.setChallenge_id(GeeTestImp.mGeetestLib.getChallengeId());
 				sdkInitData.setContext(context);
 				openGtTest(sdkInitData);
 
@@ -86,7 +86,7 @@ public class TransparentActivity extends Activity {
 						JSONObject res_json = new JSONObject(result);
 
 						//TODO Demo use of captcha
-						String custom_server_validate_url = GtSDKImp.mUrl;
+						String custom_server_validate_url = GeeTestImp.mUrl;
 						Map<String, String> params = new HashMap<String, String>();
 
 						params.put("geetest_challenge",
@@ -95,10 +95,10 @@ public class TransparentActivity extends Activity {
 								res_json.getString("geetest_validate"));
 						params.put("geetest_seccode",
 								res_json.getString("geetest_seccode"));
-						String response = GtSDKImp.mGeetestLib.submitPostData(
+						String response = GeeTestImp.mGeetestLib.submitPostData(
 								custom_server_validate_url, params, "utf-8");
 						
-						GtSDKImp.mGtListener.gtResult(response);
+						GeeTestImp.mGtListener.gtResult(response);
 					    TransparentActivity.this.finish();
 
 					} catch (Exception e) {

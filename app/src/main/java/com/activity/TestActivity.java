@@ -1,22 +1,20 @@
 package com.activity;
 
-import com.demo.apkplug_component_sdk.R;
-import com.apkplug.component.ComponentFactory;
-import com.apkplug.component.ComponentManager;
-import com.apkplug.component.ServerCallback;
-import com.gt.plug.GtSDK;
-import com.gt.plug.PlugGtListener;
-
-
 import android.app.Activity;
 import android.os.Bundle;
-
 import android.view.View;
 import android.widget.Toast;
 
+import com.apkplug.component.ComponentFactory;
+import com.apkplug.component.ComponentManager;
+import com.apkplug.component.ServerCallback;
+import com.apkplug.component.geetestsdk.GeeTest;
+import com.apkplug.component.geetestsdk.PlugGtListener;
+import com.demo.apkplug_component_sdk.R;
+
 public class TestActivity extends Activity {
 
-	private GtSDK mGtSDK=null;
+	private GeeTest mGeeTest=null;
 	private final String TAG="TestActivity";
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -24,14 +22,14 @@ public class TestActivity extends Activity {
 		setContentView(R.layout.activity_test);
 		ComponentManager.getInstance().searchComponent(
 				ComponentFactory.getInstance().getComponent("GeeTestSdk"), //从组件工厂中获取指定的组件ComponentUid
-				new ServerCallback<GtSDK>(){
+				new ServerCallback<GeeTest>(){
 					@Override
-					public void onSuccess(GtSDK service) {
+					public void onSuccess(GeeTest service) {
 
-						mGtSDK=service;
+						mGeeTest=service;
 
 						Toast.makeText(TestActivity.this, "GeeTestSDK服务获取成功！", Toast.LENGTH_SHORT).show();
-						Toast.makeText(getApplicationContext(), "version"+mGtSDK.version(), Toast.LENGTH_SHORT).show();
+						Toast.makeText(getApplicationContext(), "version"+mGeeTest.version(), Toast.LENGTH_SHORT).show();
 					}
 
 					@Override
@@ -42,16 +40,13 @@ public class TestActivity extends Activity {
 
 	public void btnAPI(View v) {
 		String captcha_id = "ad872a4e1a51888967bdb7cb45589605";
-		mGtSDK.setCaptchaId(captcha_id);
+		mGeeTest.setCaptcha(captcha_id);
 		String custom_server_validate_url = "http://testcenter.geetest.com/gtweb/android_sdk_demo_server_validate/";
-		mGtSDK.GtTest(custom_server_validate_url,new PlugGtListener() {
-
+		mGeeTest.geeTest(custom_server_validate_url, new PlugGtListener() {
 			@Override
-			public void gtResult(String response) {
-				Toast.makeText(getApplicationContext(), response, Toast.LENGTH_SHORT).show();
+			public void gtResult(String s) {
 
 			}
-
 		});
 
 	}
