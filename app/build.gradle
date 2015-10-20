@@ -18,6 +18,24 @@ android {
     }
 }
 
+apply plugin: GreetingPlugin
+
+greeting.message = 'Hi from Gradle'
+
+class GreetingPlugin implements Plugin<Project> {
+    void apply(Project project) {
+        // Add the 'greeting' extension object
+        project.extensions.create("greeting", GreetingPluginExtension)
+        // Add a task that uses the configuration
+        project.task('hello') << {
+            println project.greeting.message
+        }
+    }
+}
+
+class GreetingPluginExtension {
+    def String message = 'Hello from GreetingPlugin'
+}
 dependencies {
     compile 'com.android.support:support-v4:20.0.0'
     compile 'com.google.code.gson:gson:2.3.1'
