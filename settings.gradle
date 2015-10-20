@@ -1,15 +1,1 @@
 include ':app'
-include ':ChatUIDemo'
-project(':ChatUIDemo').projectDir=new File('components/ChatUIDemo')
-include ':gtAndroidSDK'
-project(':gtAndroidSDK').projectDir=new File('components/gtAndroidSDK')
-include ':gtPlug'
-project(':gtPlug').projectDir=new File('components/gtPlug')
-include ':maketionSDKActivity'
-project(':maketionSDKActivity').projectDir=new File('components/maketionSDKActivity')
-include ':uDesklibrary'
-project(':uDesklibrary').projectDir=new File('components/uDesklibrary')
-include ':udesk_android_sdk_demo'
-project(':udesk_android_sdk_demo').projectDir=new File('components/udesk_android_sdk_demo')
-include ':sharesdk_demo'
-project(':sharesdk_demo').projectDir=new File('components/sharesdk_demo')
