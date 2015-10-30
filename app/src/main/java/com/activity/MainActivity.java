@@ -13,6 +13,7 @@ import android.widget.Toast;
 import com.apkplug.component.ComponentFactory;
 import com.apkplug.component.ComponentManager;
 import com.apkplug.component.ServerCallback;
+import com.apkplug.component.buglysdk.Bugly;
 import com.apkplug.component.easemobimsdk.EaseMobIM;
 import com.apkplug.component.sharesdk.ShareSdk;
 import com.apkplug.component.udesksdk.Udesk;
@@ -37,18 +38,18 @@ public class MainActivity extends Activity {
     private AdapterView.OnItemClickListener mMessageClickedHandler = new AdapterView.OnItemClickListener() {
         public void onItemClick(AdapterView parent, View v, int position, long id) {
             // Do something in response to the click
-            if (mPlugNames.get(position).equals("maketionSdk"))
+            if (mPlugNames.get(position).equals("MaketionSdk"))
             {
                 startActivity(new Intent(MainActivity.this,MaketionActivity.class));
             }
             if (mPlugNames.get(position).equals("GeeTestSdk"))
             {
-                startActivity(new Intent(MainActivity.this,TestActivity.class));
+                startActivity(new Intent(MainActivity.this,GeeTestActivity.class));
             }
             if (mPlugNames.get(position).equals("ChatUIDemo"))
             {
                 ComponentManager.getInstance().searchComponent(
-                        ComponentFactory.getInstance().getComponent("ChatUIDemo"), //从组件工厂中获取指定的组件ComponentUid
+                        "ChatUIDemo", //从组件工厂中获取指定的组件ComponentUid
                         new ServerCallback<EaseMobIM>() {
                             @Override
                             public void onSuccess(EaseMobIM easeMobIM) {
@@ -67,7 +68,7 @@ public class MainActivity extends Activity {
             if (mPlugNames.get(position).equals("UdeskDemo"))
             {
                 ComponentManager.getInstance().searchComponent(
-                        ComponentFactory.getInstance().getComponent("UdeskDemo"), //从组件工厂中获取指定的组件ComponentUid
+                        "UdeskDemo", //从组件工厂中获取指定的组件ComponentUid
                         new ServerCallback<Udesk>() {
                             @Override
                             public void onSuccess(Udesk udesk) {
@@ -83,15 +84,15 @@ public class MainActivity extends Activity {
                             }
                         });
             }
-            if (mPlugNames.get(position).equals("sharesdkdemo"))
+            if (mPlugNames.get(position).equals("SharesdkDemo"))
             {
                 ComponentManager.getInstance().searchComponent(
-                        ComponentFactory.getInstance().getComponent("sharesdkdemo"), //从组件工厂中获取指定的组件ComponentUid
+                        "SharesdkDemo", //从组件工厂中获取指定的组件ComponentUid
                         new ServerCallback<ShareSdk>(){
                             @Override
                             public void onSuccess(ShareSdk shareSdk) {
                                 //成功获取到了组件的服务
-                                Toast.makeText(MainActivity.this, "sharesdkdemo服务获取成功！", Toast.LENGTH_SHORT).show();
+                                Toast.makeText(MainActivity.this, "SharesdkDemo服务获取成功！", Toast.LENGTH_SHORT).show();
                                 shareSdk.start();
 
                             }
@@ -99,6 +100,24 @@ public class MainActivity extends Activity {
                             @Override
                             public void onFailure(int errorNo, String strMsg) {
                                // Toast.makeText(MainActivity.this, strMsg, Toast.LENGTH_SHORT).show();
+                            }});
+            }
+            if (mPlugNames.get(position).equals("BuglySdk"))
+            {
+                ComponentManager.getInstance().searchComponent(
+                        "BuglySdk", //从组件工厂中获取指定的组件ComponentUid
+                        new ServerCallback<Bugly>(){
+                            @Override
+                            public void onSuccess(Bugly bugly) {
+                                //成功获取到了组件的服务
+                                Toast.makeText(MainActivity.this, "BuglySdk服务获取成功！", Toast.LENGTH_SHORT).show();
+                                bugly.start("900010309");
+
+                            }
+
+                            @Override
+                            public void onFailure(int errorNo, String strMsg) {
+                                // Toast.makeText(MainActivity.this, strMsg, Toast.LENGTH_SHORT).show();
                             }});
             }
 
@@ -120,8 +139,9 @@ public class MainActivity extends Activity {
         mListView.setAdapter(mAdapter);
         mListView.setOnItemClickListener(mMessageClickedHandler);
 
-
     }
+
+
 
 
 

@@ -12,7 +12,7 @@ import com.apkplug.component.geetestsdk.GeeTest;
 import com.apkplug.component.geetestsdk.PlugGtListener;
 import com.demo.apkplug_component_sdk.R;
 
-public class TestActivity extends Activity {
+public class GeeTestActivity extends Activity {
 
 	private GeeTest mGeeTest=null;
 	private final String TAG="TestActivity";
@@ -28,7 +28,7 @@ public class TestActivity extends Activity {
 
 						mGeeTest=service;
 
-						Toast.makeText(TestActivity.this, "GeeTestSDK服务获取成功！", Toast.LENGTH_SHORT).show();
+						Toast.makeText(GeeTestActivity.this, "GeeTestSDK服务获取成功！", Toast.LENGTH_SHORT).show();
 						Toast.makeText(getApplicationContext(), "version"+mGeeTest.version(), Toast.LENGTH_SHORT).show();
 					}
 

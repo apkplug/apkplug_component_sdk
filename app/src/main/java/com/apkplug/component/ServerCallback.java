@@ -1,7 +1,10 @@
 package com.apkplug.component;
 
 
-public interface ServerCallback<T> {
+import java.lang.reflect.ParameterizedType;
+import java.lang.reflect.Type;
+
+public abstract class ServerCallback<T> {
 		/**
 		 * 获取到相应的服务
 		 * @param service
@@ -13,4 +16,12 @@ public interface ServerCallback<T> {
 		 * @param strMsg
 		 */
 		public abstract void onFailure(int errorNo ,String strMsg);
+	public Class<T> clazz;
+	void doGetClass() {
+		Type genType = this.getClass().getGenericSuperclass();
+		Type[] params = ((ParameterizedType) genType).getActualTypeArguments();
+		this.clazz = (Class<T>) params[0];
+	}
+
+
 }

@@ -1,7 +1,5 @@
 package com.apkplug.component;
 
-import android.util.Log;
-
 import org.apkplug.Bundle.InstallBundler;
 import org.apkplug.Bundle.OSGIServiceAgent;
 import org.apkplug.Bundle.installCallback;
@@ -32,16 +30,25 @@ public class ComponentManager{
 	public void onDestroy(){
 
 	}
+	public void searchComponent(String componentName ,final ServerCallback callback) {
+
+
+
+		searchComponent(ComponentFactory.getInstance().getComponent(componentName), callback);
+
+
+	}
 	public void searchComponent(final ComponentInfo componentInfo ,final ServerCallback callback){
 		if (componentInfo==null) {
 			callback.onFailure(0, "没有此插件");
 		}else {
-			final OSGIServiceAgent agent=new OSGIServiceAgent(bContext,componentInfo.getOsgiServer(),OSGIServiceAgent.real_time);
+			callback.doGetClass();
+			final OSGIServiceAgent agent=new OSGIServiceAgent(bContext,callback.clazz,OSGIServiceAgent.real_time);
 			try {
 				Base service = (Base) agent.getService();
-				if (service.version() >=service.versionInPlug()) {
-					Log.e(""," 插件sdk版本低于宿主sdk版本");
-					}
+//				if (service.version() >=service.versionInPlug()) {
+//					Log.e(""," 插件sdk版本低于宿主sdk版本");
+//					}
 				if (service != null) {
 					callback.onSuccess(service);
 					return;
@@ -57,7 +64,7 @@ public class ComponentManager{
 						bs[i].start();
 					} catch (BundleException e) {
 						e.printStackTrace();
-						callback.onFailure(-1, ""+e.getMessage());
+						//callback.onFailure(-1, ""+e.getMessage());
 					}
 					//再次查询支付Service
 					try {
@@ -107,7 +114,7 @@ public class ComponentManager{
 			}
 
 		}
-		callback.onFailure(0, "无法获取服务");
+		//callback.onFailure(0, "无法获取服务");
 	}
 
 

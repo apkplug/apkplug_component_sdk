@@ -1,6 +1,8 @@
 apply plugin: 'com.android.application'
 
+
 android {
+
     compileSdkVersion 20
     buildToolsVersion "23.0.0"
     defaultConfig {
@@ -18,27 +20,29 @@ android {
     }
 }
 
-apply plugin: GreetingPlugin
 
-greeting.message = 'Hi from Gradle'
+//task('copy',type:Copy) {
+//    from('/Users/qinfeng/Documents/AndroidStudioProjects/jar')
+//    into('libs')
+//    include('**/*.jar')
+//    dependencies {
+//        provided files('libs/osgi2.0.0.jar')
+//    }
+//}
 
-class GreetingPlugin implements Plugin<Project> {
-    void apply(Project project) {
-        // Add the 'greeting' extension object
-        project.extensions.create("greeting", GreetingPluginExtension)
-        // Add a task that uses the configuration
-        project.task('hello') << {
-            println project.greeting.message
-        }
-    }
+task sourcesJar(type:Jar){
+    classifier ='componentsdkV12'
+    from 'build/intermediates/classes/release/com/apkplug/component'
+    into 'com/apkplug/component'
+
 }
 
-class GreetingPluginExtension {
-    def String message = 'Hello from GreetingPlugin'
-}
+//sourcesJar.dependsOn compileReleaseSources
+
 dependencies {
     compile 'com.android.support:support-v4:20.0.0'
     compile 'com.google.code.gson:gson:2.3.1'
     compile 'com.jakewharton:butterknife:7.0.0'
     compile files('libs/BundleCloud2.8.7-Release.jar')
+
 }

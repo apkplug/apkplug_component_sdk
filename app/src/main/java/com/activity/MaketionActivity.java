@@ -9,7 +9,6 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.apkplug.component.ComponentFactory;
 import com.apkplug.component.ComponentManager;
 import com.apkplug.component.ServerCallback;
 import com.apkplug.component.maketionsdk.MaketionCard;
@@ -30,12 +29,12 @@ public class MaketionActivity extends Activity {
 		setContentView(R.layout.activity_maketion);
 		
 		ComponentManager.getInstance().searchComponent(
-				ComponentFactory.getInstance().getComponent("maketionSdk"), //从组件工厂中获取指定的组件ComponentUid
+				"MaketionSdk", //从组件工厂中获取指定的组件ComponentUid
 				new ServerCallback<MaketionCard>(){
 			@Override
 			public void onSuccess(MaketionCard service) {
 				//成功获取到了组件的服务
-				Toast.makeText(MaketionActivity.this, "MaketionCardSDK服务获取成功！", Toast.LENGTH_SHORT).show();
+				Toast.makeText(MaketionActivity.this, "MaketionSdk服务获取成功！", Toast.LENGTH_SHORT).show();
 				mMaketionCard=service;
 				
 			}

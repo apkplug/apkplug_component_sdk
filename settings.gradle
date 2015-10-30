@@ -1,1 +1,14 @@
-include ':app'
+include ':app',':maketion_plug',':sharesdk_plug','easemobim_plug',':geetestsdk',':geetest',':udesk',':uDesklibrary'
+
+def String  plugdirectory ='/Users/qinfeng/Documents/AndroidStudio/components/'
+
+project(':maketion_plug').projectDir = new File(plugdirectory+'maketion_plug')
+project(':sharesdk_plug').projectDir = new File(plugdirectory+'sharesdk_plug')
+project(':easemobim_plug').projectDir = new File(plugdirectory+'easemobim_plug')
+
+project(':geetestsdk').projectDir = new File(plugdirectory+'geetest_plug/geetestsdk')
+project(':geetest').projectDir = new File(plugdirectory+'geetest_plug/geetest')
+
+project(':udesk').projectDir = new File(plugdirectory+'udesk_plug/udesk')
+project(':uDesklibrary').projectDir = new File(plugdirectory+'udesk_plug/uDesklibrary')
+
