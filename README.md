@@ -2,7 +2,7 @@
 
 ApkPlugComponentSDK 是为方便开发者使用第三方组件开发的 SDK,SDK 内部 集成通用的第三方组件(脉可寻组件,极验验证组件,IM 环信组件等),可供开 发者直接使用。如果开发者想要使用定制自定义组件,只需要把制作好的自定义 组件(apk 文件)添加到主项目,并在 json 文件中注册自定义组件信息,开发者 就可以像使用内部集成组件一样使用自定义组件。
 
-ApkPlugComponentSDK对应jar包 [下载地址](https://raw.githubusercontent.com/apkplug/apkplug_component_sdk/master/componentsdkV11.jar)
+[Wiki](https://github.com/apkplug/apkplug_component_sdk/wiki/apkplug-component-sdk)
 
 ##插件项目
 
