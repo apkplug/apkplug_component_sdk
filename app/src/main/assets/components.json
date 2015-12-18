@@ -29,5 +29,15 @@
     "symbolicName":"com.apkplug.bugly_plug",
     "version" :"1.0","appid":"123461",
     "assetsPath":"BuglSdk.apk",
-    "osgiServerClassName":"com.apkplug.component.buglysdk.Bugly"}
+    "osgiServerClassName":"com.apkplug.component.buglysdk.Bugly"},
+  { "plugName":"Sobot",
+    "symbolicName":"com.sobot.sdk.demo",
+    "version" :"1.00","appid":"123460",
+    "assetsPath":"sobotSDKDemo-debug.apk",
+    "osgiServerClassName":"com.apkplug.component.sobotsdk.Sobot"},
+  { "plugName":"UmengCommunity",
+    "symbolicName":"com.umeng.community.example",
+    "version" :"1.00","appid":"123460",
+    "assetsPath":"MainActivity.apk",
+    "osgiServerClassName":"com.apkplug.component.umengcommunitysdk.UmengCommunity"}
 ]}

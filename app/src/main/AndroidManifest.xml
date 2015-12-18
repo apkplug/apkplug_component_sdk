@@ -172,7 +172,31 @@
     <uses-permission android:name="com.google.android.c2dm.permission.RECEIVE" />
 
 
+    <uses-permission android:name="android.permission.INTERNET"/>
 
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO" />
+
+    <uses-permission android:name="android.permission.GET_TASKS" />
+
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <uses-permission android:name="android.permission.MODIFY_AUDIO_SETTINGS" />
+
+    <uses-permission android:name="android.permission.VIBRATE" />
+
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+
+    <uses-permission android:name="android.permission.CAMERA" />
 
     <application
         android:name="com.activity.MyApplication"
@@ -184,6 +208,14 @@
         <meta-data
             android:name="EASEMOB_APPKEY"
             android:value="easemob-demo#chatdemoui" />
+        <meta-data
+            android:name="UMENG_APPKEY"
+            android:value="54d19086fd98c540a2001155" >
+        </meta-data>
+        <meta-data
+            android:name="UMENG_MESSAGE_SECRET"
+            android:value="de08937649e99e3c81d7924b145b3f79" >
+        </meta-data>
         <activity
             android:name="com.activity.MaketionActivity"
             android:label="MaketionActivity" >

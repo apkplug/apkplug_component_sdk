@@ -16,7 +16,9 @@ import com.apkplug.component.ServerCallback;
 import com.apkplug.component.buglysdk.Bugly;
 import com.apkplug.component.easemobimsdk.EaseMobIM;
 import com.apkplug.component.sharesdk.ShareSdk;
+import com.apkplug.component.sobotsdk.Sobot;
 import com.apkplug.component.udesksdk.Udesk;
+import com.apkplug.component.umengcommunitysdk.UmengCommunity;
 import com.demo.apkplug_component_sdk.R;
 
 import java.util.ArrayList;
@@ -44,7 +46,7 @@ public class MainActivity extends Activity {
             }
             if (mPlugNames.get(position).equals("GeeTestSdk"))
             {
-                startActivity(new Intent(MainActivity.this,GeeTestActivity.class));
+                startActivity(new Intent(MainActivity.this, GeeTestActivity.class));
             }
             if (mPlugNames.get(position).equals("ChatUIDemo"))
             {
@@ -112,6 +114,43 @@ public class MainActivity extends Activity {
                                 //成功获取到了组件的服务
                                 Toast.makeText(MainActivity.this, "BuglySdk服务获取成功！", Toast.LENGTH_SHORT).show();
                                 bugly.start("900010309");
+
+                            }
+
+                            @Override
+                            public void onFailure(int errorNo, String strMsg) {
+                                // Toast.makeText(MainActivity.this, strMsg, Toast.LENGTH_SHORT).show();
+                            }});
+            }
+
+            if (mPlugNames.get(position).equals("UmengCommunity"))
+            {
+                ComponentManager.getInstance().searchComponent(
+                        "UmengCommunity", //从组件工厂中获取指定的组件ComponentUid
+                        new ServerCallback<UmengCommunity>(){
+                            @Override
+                            public void onSuccess(UmengCommunity uc) {
+                                //成功获取到了组件的服务
+                                Toast.makeText(MainActivity.this, "UmengCommunitySdk服务获取成功！", Toast.LENGTH_SHORT).show();
+                                uc.start();
+
+                            }
+
+                            @Override
+                            public void onFailure(int errorNo, String strMsg) {
+                                // Toast.makeText(MainActivity.this, strMsg, Toast.LENGTH_SHORT).show();
+                            }});
+            }
+            if (mPlugNames.get(position).equals("Sobot"))
+            {
+                ComponentManager.getInstance().searchComponent(
+                        "Sobot", //从组件工厂中获取指定的组件ComponentUid
+                        new ServerCallback<Sobot>(){
+                            @Override
+                            public void onSuccess(Sobot uc) {
+                                //成功获取到了组件的服务
+                                Toast.makeText(MainActivity.this, "Sobot服务获取成功！", Toast.LENGTH_SHORT).show();
+                                uc.start();
 
                             }
 

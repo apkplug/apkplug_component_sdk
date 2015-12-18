@@ -1,6 +1,6 @@
 include ':app',':maketion_plug',':sharesdk_plug','easemobim_plug',':geetestsdk',':geetest',':udesk',':uDesklibrary'
 
-def String  plugdirectory ='/Users/qinfeng/Documents/AndroidStudio/components/'
+def String  plugdirectory ='/Users/qinfeng/Documents/AndroidStudio/component/'
 
 project(':maketion_plug').projectDir = new File(plugdirectory+'maketion_plug')
 project(':sharesdk_plug').projectDir = new File(plugdirectory+'sharesdk_plug')
@@ -12,3 +12,4 @@ project(':geetest').projectDir = new File(plugdirectory+'geetest_plug/geetest')
 project(':udesk').projectDir = new File(plugdirectory+'udesk_plug/udesk')
 project(':uDesklibrary').projectDir = new File(plugdirectory+'udesk_plug/uDesklibrary')
 
+include ':sobotSDKDemo'
