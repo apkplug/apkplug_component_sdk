@@ -18,7 +18,7 @@ public class MyApplication  extends Application {
 
         try
         {
-            FrameworkFactory.getInstance().start(null, this, null);
+            FrameworkFactory.getInstance().start(null, this);
             ComponentManager.getInstance().onInit(FrameworkFactory.getInstance().getFrame().getSystemBundleContext());
 
             ComponentsInfoManager.onInit(getApplicationContext());
