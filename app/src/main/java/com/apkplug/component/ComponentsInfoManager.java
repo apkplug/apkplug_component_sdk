@@ -1,11 +1,14 @@
 package com.apkplug.component;
 
+import android.content.Context;
 import android.util.Log;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
+
 import org.json.JSONException;
 import org.json.JSONObject;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -19,6 +22,7 @@ public class ComponentsInfoManager implements  ComponentsInfo{
 
     private final String TAG="ComponentInfoManager";
     private ArrayList<ComponentInfo> mComponentInfoList=new ArrayList<ComponentInfo>();
+    private static Context mContext;
 
     public ComponentsInfoManager() {
         fillComponentInfoList(getJSONString());
@@ -33,7 +37,9 @@ public class ComponentsInfoManager implements  ComponentsInfo{
         }
         return null;
     }
-
+    public static void onInit(Context context){
+        mContext=context;
+    }
     public  int numberOfComponents(){
         return mComponentInfoList.size();
     }
@@ -44,7 +50,7 @@ public class ComponentsInfoManager implements  ComponentsInfo{
         String componentInfoListString=null;
         try {
 
-            InputStreamReader inputStreamReader = new InputStreamReader(ApkplugApplication.getContext().getAssets().open("components.json"), "UTF-8");
+            InputStreamReader inputStreamReader = new InputStreamReader(mContext.getAssets().open("components.json"), "UTF-8");
             BufferedReader bufferedReader = new BufferedReader(inputStreamReader);//使用BufferReader读取输入流中的数据；
             String line;
             StringBuilder stringBuilder = new StringBuilder();//所有读取的json放到StringBuilder中，这里也可以使用StringBuffer,效果一样；
