@@ -6,11 +6,13 @@ import com.apkplug.component.ComponentManager;
 import com.apkplug.component.ComponentsInfoManager;
 
 import org.apkplug.app.FrameworkFactory;
+import org.apkplug.app.FrameworkInstance;
 
 /**
  * Created by qinfeng on 15/10/27.
  */
 public class MyApplication  extends Application {
+    private FrameworkInstance frame;
 
     @Override
     public void onCreate() {
@@ -18,10 +20,11 @@ public class MyApplication  extends Application {
 
         try
         {
-            FrameworkFactory.getInstance().start(null, this);
-            ComponentManager.getInstance().onInit(FrameworkFactory.getInstance().getFrame().getSystemBundleContext());
 
+            frame = FrameworkFactory.getInstance().start(null, this);
+            ComponentManager.getInstance().onInit(frame.getSystemBundleContext());
             ComponentsInfoManager.onInit(getApplicationContext());
+
         }
         catch (Exception ex)
         {

@@ -24,7 +24,7 @@
     "symbolicName":"cn.sharesdk.demo",
     "version" :"1.00","appid":"123460",
     "assetsPath":"SharesdkDemo.apk",
-    "osgiServerClassName":"com.apkplug.component.sharesdk.ShareSdk"},
+    "osgiServerClassName":"com.apkplug.component.sharesdk.PlugShareSDK"},
   { "plugName":"BuglySdk",
     "symbolicName":"com.apkplug.bugly_plug",
     "version" :"1.0","appid":"123461",

@@ -1,5 +1,10 @@
 package com.apkplug.component;
 
+import android.util.Log;
+
+import com.apkplug.component.util.Timber;
+import com.demo.apkplug_component_sdk.BuildConfig;
+
 import org.apkplug.Bundle.InstallBundler;
 import org.apkplug.Bundle.OSGIServiceAgent;
 import org.apkplug.Bundle.installCallback;
@@ -23,9 +28,32 @@ public class ComponentManager{
 	private InstallBundler ib;
 	public void onInit(BundleContext bContext){
 
+		if (BuildConfig.DEBUG) {
+			Timber.plant(new Timber.DebugTree());
+		} else {
+			Timber.plant(new CrashReportingTree());
+		}
+
 		this.bContext=bContext;
 		ib=new InstallBundler(bContext);
 
+	}
+	/** A tree which logs important information for crash reporting. */
+	private static class CrashReportingTree extends Timber.Tree {
+		@Override
+		protected void log(int priority, String tag, String message, Throwable t) {
+			if (priority == Log.VERBOSE || priority == Log.DEBUG) {
+				return;
+			}
+			//TODO report crash to server
+			if (t != null) {
+				if (priority == Log.ERROR) {
+
+				} else if (priority == Log.WARN) {
+
+				}
+			}
+		}
 	}
 	public void onDestroy(){
 

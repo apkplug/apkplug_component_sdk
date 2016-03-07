@@ -1,19 +1,14 @@
 package com.apkplug.component;
 
 import android.content.Context;
-import android.util.Log;
 
-import com.google.gson.Gson;
-import com.google.gson.reflect.TypeToken;
-
-import org.json.JSONException;
-import org.json.JSONObject;
+import com.apkplug.component.util.Timber;
+import com.apkplug.component.json.JsonParserResolver;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
-import java.lang.reflect.Type;
-import java.util.ArrayList;
+import java.util.List;
 
 /**
  * Created by qinfeng on 15/9/15.
@@ -21,7 +16,7 @@ import java.util.ArrayList;
 public class ComponentsInfoManager implements  ComponentsInfo{
 
     private final String TAG="ComponentInfoManager";
-    private ArrayList<ComponentInfo> mComponentInfoList=new ArrayList<ComponentInfo>();
+    private List<ComponentInfo> mComponentInfoList;
     private static Context mContext;
 
     public ComponentsInfoManager() {
@@ -68,22 +63,7 @@ public class ComponentsInfoManager implements  ComponentsInfo{
         return componentInfoListString;
     }
     private void fillComponentInfoList(String componentInfoListString) {
-        Gson gson = new Gson();
-        Type type = new TypeToken<ArrayList<ComponentInfo>>() {
-        }.getType();
-        JSONObject cus;
-        try {
-            cus = new JSONObject(componentInfoListString);
-            mComponentInfoList  = gson.fromJson(cus.getString("componentsInfo"), type);
-            for (int i = 0; i < mComponentInfoList.size(); i++) {
-                mComponentInfoList.get(i).setOsgiServer();
-                Log.e(TAG, mComponentInfoList.get(i).toString());
-            }
-
-        } catch (JSONException e) {
-            // TODO Auto-generated catch block
-            e.printStackTrace();
-        }
-
+        mComponentInfoList = JsonParserResolver.JSON_PARSER.parseComponentsInfo(componentInfoListString);
+        Timber.d(mComponentInfoList.toString());
     }
 }
